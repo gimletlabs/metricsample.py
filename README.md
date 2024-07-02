@@ -48,7 +48,7 @@ python client.py [--server_addr <server_address>] [--query <query>] [--relative 
 
 ``` bash
 export GML_API_KEY=your_api_key_here
-python client.py app.gimletlabs.ai:443 --query "gml_gem_image_quality_brisque_score" --relative "-10m"
+python client.py --server_addr app.gimletlabs.ai:443 --query "gml_gem_image_quality_brisque_score" --relative "-10m"
 ```
 
 ## Code Overview
