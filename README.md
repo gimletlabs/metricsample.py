@@ -19,7 +19,7 @@ This project provides a Python client for interacting with the Gimlet's control 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/metricsreader_client.git
+   git clone https://github.com/gimletlabs/metricsreader_client.git
    cd metricsreader_client
    ```
 
