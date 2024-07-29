@@ -19,8 +19,8 @@ This project provides a Python client for interacting with the Gimlet's control 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/gimletlabs/metricsreader_client.git
-   cd metricsreader_client
+   git clone https://github.com/gimletlabs/metricsample.py.git
+   cd metricsample.py
    ```
 
 2. Install the required packages:
@@ -40,15 +40,15 @@ export GML_API_KEY=your_api_key_here
 ``` bash
 python client.py [--server_addr <server_address>] [--query <query>] [--relative <relative_time_window>]
 ```
-- --server_addr: (Optional) The address of the gRPC server (e.g., app.gimletlabs.ai:443).
-- --query: (Optional) The PromQL query string (default: gml_gem_image_quality_brisque_score).
-- --relative: (Optional) The relative time window to query (default: -5m).
+- `--server_addr`: (Optional) The address of the gRPC server (e.g., app.gimletlabs.ai:443).
+- `--query`: (Optional) The PromQL query string (default: gml_gem_image_quality_brisque_score).
+- `--relative`: (Optional) The relative time window to query (default: 5m).
 
 ### Example
 
 ``` bash
 export GML_API_KEY=your_api_key_here
-python client.py --server_addr app.gimletlabs.ai:443 --query "gml_gem_image_quality_brisque_score" --relative "-10m"
+python client.py --server_addr app.gimletlabs.ai:443 --query "gml_gem_image_quality_brisque_score" --relative "10m"
 ```
 
 ## Code Overview

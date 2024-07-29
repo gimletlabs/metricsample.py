@@ -9,7 +9,7 @@ from tabulate import tabulate
 import argparse
 from colored import attr, fg
 
-def get_range_query_results(server_address, query="gml_gem_image_quality_brisque_score", relative="-5m"):
+def get_range_query_results(server_address, query="gml_gem_image_quality_brisque_score", relative="5m"):
     # Create SSL credentials using default trusted certificates
     credentials = grpc.ssl_channel_credentials()
     channel = grpc.secure_channel(server_address, credentials)
